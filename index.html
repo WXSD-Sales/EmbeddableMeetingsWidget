@@ -1,8 +1,23 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video Support</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"><link href="./node_modules/@webex/widgets/dist/css/webex-widgets.css"/><script defer="defer" src="bundle.js"></script></head><body><section class="section"><div class="container"><h1 class="title">Video Support</h1><p class="subtitle">Click here to have a <strong>video call</strong> with a support agent<strong></strong></p></div><div id="embeddable-meetings-widget"></div><script src="bundle.js"></script><script>webexMeetingsWidget({accessToken: "YjMwNzVmMzMtYjZhNy00NTJjLTg5MWMtYmZlMTRhNzEzY2Q2MzU5YmE5YTgtMGZj_P0A1_952e87f4-5c49-4ca1-b285-ee0570c2498c",
-            meetingDestination: "vvazquez@cisco-collab.webex.com",
-            width:"700px",
-            height:"500px",
-            layout:"Grid",
-            draggable: false,
-            inMeetingControls:['mute-audio','leave-meeting'],
-            interstitialControls:['join-meeting']});</script></section></body></html>
+<html>
+  <head>
+    <title>Webex Widget Demo</title>
+    <link href="./node_modules/@webex/widgets/dist/css/webex-widgets.css" />
+    
+  <script defer src="bundle.js"></script></head>
+
+  <body>
+    <div id="embeddable-meetings-widget"></div>
+  <script src="bundle.js"></script>
+  <script>
+  webexMeetingsWidget({accessToken: "xxx",
+      meetingDestination: "xxx",
+      theme:"light",
+      width:"700px",
+      height:"500px",
+      layout:"Grid",
+      draggable: false,
+      inMeetingControls:['mute-audio','leave-meeting'],
+      interstitialControls:['join-meeting']});
+</script>
+  </body>
+</html>
